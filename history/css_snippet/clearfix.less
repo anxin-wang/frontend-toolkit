@@ -1,0 +1,59 @@
+/******************************************clearfix start**************************/
+// Clearfix hack1
+.clearfix {
+  *zoom: 1; //ie6
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    // Fixes Opera/contenteditable bug:
+    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
+    line-height: 0;
+  }
+  &:after {
+    clear: both; //general
+  }
+}
+
+
+/* Clearfix hack 2 */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/* Cleafix hack: IE6/7 support */
+.clearfix {
+  *zoom: 1;
+}
+
+/*clearfix hack 3*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+/* for IE/Mac */
+
+/*<!--[if IE]>
+<style type="text/css">*/
+.clearfix {
+  zoom: 1; /* triggers hasLayout */
+  display: block; /* resets display for IE/Win */
+}
+
+/*</style>
+  <![endif]-->*/
+/******************************************clearfix end**************************/

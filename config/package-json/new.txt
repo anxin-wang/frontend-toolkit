@@ -1,0 +1,44 @@
+ /* bus总线 */
+ "vue-bus"
+
+ /* 国际化*/
+ "vue-i18n"
+
+ /* 简单（流）文本定向消息协议 */
+ "vue-stomp"
+ "stompjs"
+
+ /* 消息队列遥测传输协议 */
+ "mqtt"
+
+ /* zip压缩 */
+ "jszip"
+ "jszip-utils"
+
+
+ /* 视频播放 */
+ "video.js"
+ "videojs-markers"
+
+ /* three.js */
+ "three"
+ "three-css2drender"
+ "three-obj-mtl-loader"
+ "three-orbit-controls"
+
+ /* 拖拽 */
+ "sortablejs"
+ "vue-dragdrop"
+
+ /* 类似lodash的类库 */
+ "underscore.js"
+
+ app_info - parser
+
+ echarts
+
+ flv.js
+
+ jsonp
+
+ js - cookie

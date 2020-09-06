@@ -1,0 +1,25 @@
+.my-element {
+  font-size: 13pxpx;
+  font-size: 1.3pxrem;
+}
+/* Fonts */
+.content {
+  font: 1em/1.4 Segoe, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+.title {
+  font: 1.7em/1.2 Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.code {
+  font: 0.8em/1.6 Monaco, Mono-Space, monospace;
+}
+/* Disabled effect class */
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/*Blurry Text*/
+.blur {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=font.css.map */

@@ -1,0 +1,10 @@
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  /* Required for IE8 */
+  -o-text-overflow: ellipsis;
+  /* Required for Opera */
+  text-overflow: ellipsis;
+}
+/*# sourceMappingURL=text-overflow.css.map */
