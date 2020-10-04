@@ -1,33 +1,57 @@
 {
   "workbench.colorTheme": "Visual Studio Light",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.renameOnType": true,
-  "files.autoSave": "onFocusChange",
+  "editor.fontSize": 14,
+  "window.zoomLevel": 0,
+
   //配置eslint
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "vue",
-    "html",
-  ],
+  "eslint.validate": ["javascript", "javascriptreact", "vue", "html"],
   "eslint.options": {
-    "plugins": [
-      "html"
-    ]
+    "plugins": ["html"]
   },
-  "window.zoomlevel": 0.8, //更改整体缩放比例，可在此基础上再设置字体大小
+
   "editor.formatOnSave": true,
-  // "javascript.format.enable": false,
   "eslint.format.enable": true,
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
+  // "editor.formatOnSaveMode": "modifications",
+
   //终端设置
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.rightClickBehavior": "copyPaste",
-  "vsicons.dontShowNewVersionMessage": true
+
+  //prettier
+  // 所有语言
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 特定语言
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /*  prettier的配置 */
+  "prettier.printWidth": 120, // 超过最大值换行
+  "prettier.tabWidth": 2, // 缩进字节数
+  "prettier.useTabs": false, // 缩进不使用tab，使用空格
+  "prettier.semi": true, // 句尾添加分号
+  "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号
+  "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+  "prettier.endOfLine": "auto", // 结尾是 \n \r \n\r auto
+  "prettier.singleQuote": true, // 使用单引号代替双引号
+  "prettier.arrowParens": "avoid", //  (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
+  "prettier.htmlWhitespaceSensitivity": "css",
+
+  "prettier.proseWrap": "preserve", // 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+  "prettier.ignorePath": ".prettierignore", // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+  "prettier.requireConfig": false // Require a 'prettierconfig' to format prettier
 }
